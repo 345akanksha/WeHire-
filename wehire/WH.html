@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            flex-wrap: wrap;
+        }
+
+        .option {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .option a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .option img {
+            width: 150px;
+            height: 150px; 
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+
+        .option img:hover {
+            transform: scale(1.1);
+        }
+
+        p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to WeHire</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="option">
+                <a href="agencylog.php">
+                    <img src="emp.jpg" alt="Agency Login">
+                    <p>Agency Login</p>
+                </a>
+            </div>
+            <div class="option">
+                <a href="emplog.php">
+                    <img src="emp.jpg" alt="Employer Login">
+                    <p>Employer Login</p>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
